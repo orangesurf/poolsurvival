@@ -27,13 +27,13 @@ def find_min_reserve_binary_search(params):
 if __name__ == '__main__':
     for target_survival_rate in [95,99]:
         for year in [1,3]:
-            for cycle in range(1):
+            for cycle in range(10):
                 days = 365 * year
                 blocks_per_day = 144
                 reward_per_block = 3.125 * 100_000_000
                 pool_fee_percent = 0.01
                 reserve_share = 0.5
-                runs = 100000 
+                runs = 5000
                 low = 0
                 high = 10000 * 1e8 
                 precision = 0.2*(100-target_survival_rate)
